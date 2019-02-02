@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+    line-height: 1.7em;
+    background: #eee;
+}
+
+.container {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 30px 20px;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.title {
+    width: 90%;
+    padding: 10px 5px;
+    border-radius: 10px 0 0 10px;
+}
+
+input[type='submit'] {
+    padding: 10px 5px;
+    width: 10%;
+    border-radius: 0 10px 10px 0;
+    margin-left: -5px;
+    background: rgb(235, 42, 42);
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+input[type='submit']:hover {
+    cursor: pointer;
+}
+
+.title, input[type='submit'] {
+    border: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 30px 0;
+}
+
+.film {
+    width: 100%;
+}
+
+.film-poster {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.film-title {
+    text-align: center;
+    font-style: italic;
+}
+
+.film:hover {
+    cursor: pointer;
+}
+
+.film-info {
+    margin-top: 20px;
+}
+
+.film-info > p {
+    opacity: 0.8;
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+
+.popup {
+    position: absolute;
+    padding: 30px 20px;
+    background: #444;
+    color: #ddd;
+}
